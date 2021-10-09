@@ -45,3 +45,13 @@
         modified:   README.md
         modified:   apps/main/apps.py
         modified:   config/settings.py
+
+
+### -------------------------------------------
+### 3. DATABASE USING MYSQL
+### -------------------------------------------
+
+
+#### 3.1 Install mysqlclient
+
+        modified:   README.md
