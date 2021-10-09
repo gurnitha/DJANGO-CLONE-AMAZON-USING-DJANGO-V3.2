@@ -71,3 +71,8 @@
         modified:   apps/main/models.py
         modified:   config/settings.py
 
+
+#### 3.4 Register models to admin
+
+        modified:   README.md
+        modified:   apps/main/admin.py 
