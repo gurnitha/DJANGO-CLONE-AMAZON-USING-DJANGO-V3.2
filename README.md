@@ -55,3 +55,11 @@
 #### 3.1 Install mysqlclient
 
         modified:   README.md
+
+
+#### 3.2 Create database and setup django-environ
+
+        modified:   .gitignore
+        modified:   README.md
+        modified:   config/settings.py
+
