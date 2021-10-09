@@ -63,3 +63,11 @@
         modified:   README.md
         modified:   config/settings.py
 
+
+#### 3.3 Create models and run migrations
+
+        modified:   README.md
+        new file:   apps/main/migrations/0001_initial.py
+        modified:   apps/main/models.py
+        modified:   config/settings.py
+
