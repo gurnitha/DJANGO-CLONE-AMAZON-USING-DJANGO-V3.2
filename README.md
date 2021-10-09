@@ -38,3 +38,10 @@
         new file:   apps/main/models.py
         new file:   apps/main/tests.py
         new file:   apps/main/views.py
+
+
+#### 2.3 Register the 'main' app to the project
+
+        modified:   README.md
+        modified:   apps/main/apps.py
+        modified:   config/settings.py

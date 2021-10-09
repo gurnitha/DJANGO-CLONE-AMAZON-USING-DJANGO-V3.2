@@ -1,3 +1,5 @@
+# config/settings.py
+
 """
 Django settings for config project.
 
@@ -37,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Locals
+    'apps.main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
