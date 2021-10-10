@@ -102,3 +102,12 @@
         new file:   static/assets/js/page/utilities-contact.js
         new file:   static/assets/js/scripts.js
         new file:   static/assets/js/stisla.js
+
+
+#### 4.4 Create demo page using Views, Templates, Urls
+
+        modified:   README.md
+        new file:   apps/main/templates/demo.html
+        new file:   apps/main/urls.py
+        modified:   apps/main/views.py
+        modified:   config/urls.py
