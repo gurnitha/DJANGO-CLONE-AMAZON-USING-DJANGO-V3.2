@@ -180,3 +180,10 @@
         modified:   apps/main/templates/template_admin/signin.html
         modified:   apps/main/urls.py
         modified:   apps/main/views.py
+
+
+#### 4.12 Admin login part 2 - Login and showing alert message
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/signin.html
+        modified:   apps/main/views.py
