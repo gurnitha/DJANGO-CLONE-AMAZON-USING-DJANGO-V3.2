@@ -117,3 +117,14 @@
 
         modified:   README.md
         modified:   apps/main/templates/demo.html
+
+
+#### 4.6 Loading static files
+
+        modified:   README.md
+        modified:   apps/main/templates/demo.html
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   tamplate/demo.html
+
+        NOTE: Moved static fiels from root to main app
