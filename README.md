@@ -128,3 +128,10 @@
         new file:   tamplate/demo.html
 
         NOTE: Moved static fiels from root to main app
+
+
+#### 4.7 Create admin login page with new logo - Views, Templates and Urls
+
+        modified:   README.md
+        new file:   apps/main/static/assets/img/INGStore.png
+        new file:   apps/main/templates/admin/signin.html
