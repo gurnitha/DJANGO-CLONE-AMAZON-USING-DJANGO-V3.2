@@ -77,3 +77,13 @@
         modified:   README.md
         modified:   apps/main/admin.py
         modified:   apps/main/models.py
+
+
+### -------------------------------------------
+### 4. ADMIN TEMPLATE SETUP
+### -------------------------------------------
+
+
+#### 4.1 Create static and media directories inside the root or src folder
+
+        modified:   README.md
