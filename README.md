@@ -87,3 +87,9 @@
 #### 4.1 Create static and media directories inside the root or src folder
 
         modified:   README.md
+
+
+#### 4.2 Linking static and media folder with the project
+
+        modified:   README.md
+        modified:   config/settings.py
