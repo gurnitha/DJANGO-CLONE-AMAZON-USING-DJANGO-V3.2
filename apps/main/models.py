@@ -1,6 +1,6 @@
 # apps/main/models.py
 
-
+# Django modules
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.dispatch import receiver
@@ -213,7 +213,11 @@ def create_user_profile(sender,instance,created,**kwargs):
         if instance.user_type==2:
             StaffUser.objects.create(auth_user_id=instance)
         if instance.user_type==3:
-            MerchantUser.objects.create(auth_user_id=instance,company_name="",gst_details="",address="")
+            MerchantUser.objects.create(
+            		auth_user_id=instance,
+            		company_name="",
+            		gst_details="",
+            		address="")
         if instance.user_type==4:
             CustomerUser.objects.create(auth_user_id=instance)            
 

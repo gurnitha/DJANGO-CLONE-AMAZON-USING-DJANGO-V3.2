@@ -75,4 +75,5 @@
 #### 3.4 Register models to admin
 
         modified:   README.md
-        modified:   apps/main/admin.py 
+        modified:   apps/main/admin.py
+        modified:   apps/main/models.py
