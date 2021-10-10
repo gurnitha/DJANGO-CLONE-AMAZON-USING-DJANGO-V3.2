@@ -135,3 +135,11 @@
         modified:   README.md
         new file:   apps/main/static/assets/img/INGStore.png
         new file:   apps/main/templates/admin/signin.html
+
+
+#### 4.8 Create admin base template
+
+        modified:   README.md
+        new file:   apps/main/templates/admin/base.html
+        new file:   apps/main/templates/admin/navbar.html
+        new file:   apps/main/templates/admin/sidebar.html
