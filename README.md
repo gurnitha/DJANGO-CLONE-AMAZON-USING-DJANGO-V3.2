@@ -93,3 +93,12 @@
 
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 4.3 Adding static assets
+
+        ...
+        new file:   static/assets/js/page/modules-vector-map.js
+        new file:   static/assets/js/page/utilities-contact.js
+        new file:   static/assets/js/scripts.js
+        new file:   static/assets/js/stisla.js
