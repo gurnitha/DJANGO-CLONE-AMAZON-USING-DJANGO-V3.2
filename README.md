@@ -143,3 +143,21 @@
         new file:   apps/main/templates/admin/base.html
         new file:   apps/main/templates/admin/navbar.html
         new file:   apps/main/templates/admin/sidebar.html
+
+
+#### 4.9 Create admin dashboard home page for admin
+
+        modified:   README.md
+        new file:   apps/main/admin_views.py
+        new file:   apps/main/static/assets/img/favicon.png
+        new file:   apps/main/static/assets/img/favicon1.png
+        new file:   apps/main/static/assets/img/logo.png
+        deleted:    apps/main/templates/admin/navbar.html
+        deleted:    apps/main/templates/admin/sidebar.html
+        renamed:    apps/main/templates/admin/base.html -> apps/main/templates/template_admin/base.html
+        new file:   apps/main/templates/template_admin/index.html
+        new file:   apps/main/templates/template_admin/navbar.html
+        new file:   apps/main/templates/template_admin/sidebar.html
+        renamed:    apps/main/templates/admin/signin.html -> apps/main/templates/template_admin/signin.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views.py

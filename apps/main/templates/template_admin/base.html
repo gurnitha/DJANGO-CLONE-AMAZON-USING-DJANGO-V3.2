@@ -1,10 +1,11 @@
-<!-- apps/main/templates/admin/base.html -->
+<!-- apps/main/templates/template_admin/base.html -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon1.png' %}"/>
     <title>
     	{% block title %}
     	{% endblock title %}
@@ -31,11 +32,11 @@
             <div class="navbar-bg"></div>
 
             <!-- Navbar -->
-            {% include 'admin/navbar.html' %}
+            {% include 'template_admin/navbar.html' %}
             <!-- Navbar // -->
 
             <!-- Sidebar -->
-            {% include 'admin/sidebar.html' %}
+            {% include 'template_admin/sidebar.html' %}
             <!-- Sidebar // -->
 
             <!-- Main Content -->
@@ -44,7 +45,7 @@
                     <div class="section-header">
                         <h1>{% block page_title %}{% endblock page_title %}</h1>
                     </div>
-                    {% block page_content %}{% endblock page_content %}
+                    {% block main_page_content %}{% endblock main_page_content %}
                 </section>
             </div>
             <!-- Main Content // -->
