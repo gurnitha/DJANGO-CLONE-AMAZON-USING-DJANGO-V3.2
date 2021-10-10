@@ -172,3 +172,11 @@
         modified:   apps/main/templates/template_admin/navbar.html
         modified:   apps/main/templates/template_admin/sidebar.html
         modified:   apps/main/urls.py
+
+
+#### 4.11 Admin login part 1 - HttpResponse login process
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/signin.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views.py

@@ -2,6 +2,7 @@
 
 # Django modules
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -13,4 +14,8 @@ def adminLogin(request):
 
 def demoPage(request):
 	return render(request, 'demo.html')
+
+def adminLoginProcess(request):
+	return HttpResponse("Login process")
+
 

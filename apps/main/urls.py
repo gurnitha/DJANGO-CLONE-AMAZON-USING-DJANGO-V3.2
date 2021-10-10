@@ -7,7 +7,8 @@ from django.urls import path
 from apps.main.views import (
 	adminHome, 
 	adminLogin,
-	demoPage,)
+	demoPage,
+	adminLoginProcess,)
 
 # from apps.main.admin_views import adminHome
 
@@ -17,6 +18,7 @@ urlpatterns = [
 	
 	# Admin urls
 	path('admin/home/', adminHome, name='adminHome'), 
-	path('admin/login/', adminLogin, name='adminLogin'), 
+	path('admin/login/', adminLogin, name='adminLogin'),  
+	path('admin/login_process/', adminLoginProcess, name='adminLoginProcess'), 
     path('', demoPage, name='demoPage'),
 ]

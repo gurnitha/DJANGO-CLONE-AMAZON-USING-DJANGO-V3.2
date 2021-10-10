@@ -30,42 +30,69 @@
                                 <h4>Login</h4>
                             </div>
                             <div class="card-body">
-                                <form method="POST" action="#" class="needs-validation" novalidate="">
+                                <!-- Login Form -->
+                                <form 
+                                    method="POST" 
+                                    action="{% url 'main:adminLoginProcess' %}" 
+                                    class="needs-validation" 
+                                    novalidate="">
+                                    {% csrf_token %}
+                                    <!-- Email -->
                                     <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                                        <label for="email">Username</label>
+                                        <input 
+                                            id="username" 
+                                            name="username" 
+                                            type="text" 
+                                            class="form-control" 
+                                            tabindex="1" 
+                                            required autofocus>
                                         <div class="invalid-feedback">
-                                            Please fill in your email
+                                            Please fill in your username
                                         </div>
                                     </div>
+                                    <!-- Password -->
                                     <div class="form-group">
                                         <div class="d-block">
-                                            <label for="password" class="control-label">Password</label>
-                                            <div class="float-right">
-                                                <a href="auth-forgot-password.html" class="text-small">
-                                                Forgot Password?
-                                                </a>
-                                            </div>
+                                            <label 
+                                                for="password" 
+                                                class="control-label">Password</label>
                                         </div>
-                                        <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                                        <div class="invalid-feedback">
-                                            please fill in your password
-                                        </div>
+                                        <input 
+                                            id="password" 
+                                            type="password" 
+                                            class="form-control" 
+                                            name="password" 
+                                            tabindex="2" 
+                                            required>
                                     </div>
+                                    <!-- Remember me -->
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                                            <label class="custom-control-label" for="remember-me">Remember Me</label>
+                                            <input 
+                                                type="checkbox" 
+                                                name="remember" 
+                                                class="custom-control-input" 
+                                                tabindex="3" id="remember-me">
+                                            <label 
+                                                class="custom-control-label" 
+                                                for="remember-me">Remember Me</label>
                                         </div>
                                     </div>
+                                    <!-- Button -->
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-                                        Login
+                                        <button 
+                                            type="submit" 
+                                            class="btn btn-primary btn-lg btn-block" 
+                                            tabindex="4">
+                                            Login
                                         </button>
                                     </div>
                                 </form>
+                                <!-- Login Form end -->
                             </div>
                         </div>
+                        <!-- Footer -->
                         <div class="simple-footer">
                             Copyright &copy; <span style="padding:5px; border: 1px solid #6777EF; color:#6777EF;">ING AFTER 60</span> 2022
                         </div>
