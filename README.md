@@ -161,3 +161,14 @@
         renamed:    apps/main/templates/admin/signin.html -> apps/main/templates/template_admin/signin.html
         modified:   apps/main/urls.py
         modified:   apps/main/views.py
+
+
+#### 4.10 Customizing admin home page
+
+        modified:   README.md
+        new file:   apps/main/static/assets/img/favicon2.png
+        new file:   apps/main/static/assets/img/logo1.png
+        modified:   apps/main/templates/template_admin/base.html
+        modified:   apps/main/templates/template_admin/navbar.html
+        modified:   apps/main/templates/template_admin/sidebar.html
+        modified:   apps/main/urls.py

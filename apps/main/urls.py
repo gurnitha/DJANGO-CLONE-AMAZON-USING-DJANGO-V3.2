@@ -16,7 +16,7 @@ app_name = 'main'
 urlpatterns = [
 	
 	# Admin urls
-	path('admin/', adminHome, name='adminHome'), 
+	path('admin/home/', adminHome, name='adminHome'), 
 	path('admin/login/', adminLogin, name='adminLogin'), 
     path('', demoPage, name='demoPage'),
 ]
