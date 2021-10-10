@@ -203,3 +203,10 @@
         modified:   apps/main/templates/template_admin/signin.html
         modified:   apps/main/urls.py
         modified:   apps/main/views.py
+
+
+#### 4.15 Preventing Un-authenticated user to access the admin dashboard
+
+        modified:   README.md
+        modified:   apps/main/views.py
+
