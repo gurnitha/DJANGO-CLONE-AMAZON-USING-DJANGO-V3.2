@@ -1,0 +1,32 @@
+<!-- apps/main/templates/template_admin/category_create.html -->
+{% extends 'template_admin/base.html' %}
+
+<!-- Block title -->
+{% block title %}
+Category create | Dashboard
+{% endblock title %}
+
+<!-- Block custom css -->
+{% block custom_css %}
+{% endblock custom_css %}
+
+<!-- Block page title -->
+{% block page_title %}
+Category Create
+{% endblock page_title %}
+
+<!-- Block main page content -->
+{% block main_page_content %}
+
+<form method="POST" enctype="multipart/form-data">
+	{{ form.as_p }}
+	<button type="submit">Save Category</button>
+</form>
+
+{% endblock main_page_content %}
+
+<!-- Block custom js -->
+{% block custom_js %}
+
+{% endblock custom_js %}
+

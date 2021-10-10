@@ -3,7 +3,7 @@
 # Django modules
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.views.generic import ListView
+from django.views.generic import ListView, CreateView
 
 # Locals
 from apps.main.models import Categories
@@ -20,3 +20,10 @@ def adminHome(request):
 class CategoriesListView(ListView):
 	model=Categories
 	template_name="template_admin/category_list.html"
+
+
+# Class views:CategoriesCreateView
+class CategoriesCreateView(CreateView):
+	model=Categories
+	fields="__all__"
+	template_name="template_admin/category_create.html"
