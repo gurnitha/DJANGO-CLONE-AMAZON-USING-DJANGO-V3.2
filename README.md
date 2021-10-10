@@ -223,3 +223,13 @@
         modified:   apps/main/urls.py
         modified:   apps/main/views.py
         new file:   apps/main/views_admin.py
+
+
+#### 5.2 House keeping - renaming files
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/index.html
+        modified:   apps/main/templates/template_admin/signin.html
+        modified:   apps/main/views_admin.py
+
+
