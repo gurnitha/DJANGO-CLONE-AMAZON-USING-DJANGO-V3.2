@@ -187,3 +187,9 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/signin.html
         modified:   apps/main/views.py
+
+
+#### 4.13 Admin login part 3 - Display name/email of the LOGGED IN user
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/navbar.html
