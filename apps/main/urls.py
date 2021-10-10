@@ -10,7 +10,8 @@ from apps.main.views import (
 	adminLoginProcess,
 	adminLogoutProcess)
 from apps.main.views_admin import (
-	adminHome,)
+	adminHome,
+	CategoriesListView)
 
 # from apps.main.admin_views import adminHome
 
@@ -22,6 +23,7 @@ urlpatterns = [
 	path('admin/', adminHome, name='adminHome'), 
 	path('admin/login/', adminLogin, name='adminLogin'),  
 	path('admin/login_process/', adminLoginProcess, name='adminLoginProcess'), 
-	path('admin/logout_process/', adminLogoutProcess, name='adminLogoutProcess'), 
+	path('admin/logout_process/', adminLogoutProcess, name='adminLogoutProcess'),
+	path('admin/categories', CategoriesListView.as_view(), name='CategoriesListView'), 
     path('', demoPage, name='demoPage'),
 ]

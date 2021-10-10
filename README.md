@@ -233,3 +233,11 @@
         modified:   apps/main/views_admin.py
 
 
+#### 5.3 Create category_list page (Views, Templates, and Urls)
+
+        modified:   README.md
+        new file:   apps/main/templates/template_admin/category_list.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views_admin.py
+
+
