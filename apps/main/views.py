@@ -3,7 +3,7 @@
 # Django modules
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib.auth import authenticate, login  
+from django.contrib.auth import authenticate, login, logout   
 from django.contrib import messages
 from django.urls import reverse
 
@@ -12,11 +12,14 @@ from django.urls import reverse
 def adminHome(request):
 	return render(request, 'template_admin/index.html')
 
+
 def adminLogin(request):
 	return render(request, 'template_admin/signin.html')
 
+
 def demoPage(request):
 	return render(request, 'demo.html')
+
 
 def adminLoginProcess(request):
 	# Get username and password form the form fields
@@ -34,6 +37,11 @@ def adminLoginProcess(request):
 		messages.error(request, "Invalid login credentials! Try again ...")
 		return HttpResponseRedirect(reverse('main:adminLogin'))
 
+
+def adminLogoutProcess(request):
+	logout(request)
+	messages.success(request, "Logged out success.")
+	return HttpResponseRedirect(reverse("main:adminLogin"))
 
 
 

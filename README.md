@@ -193,3 +193,13 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/navbar.html
+
+
+#### 4.14 Admin logout 
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/navbar.html
+        modified:   apps/main/templates/template_admin/sidebar.html
+        modified:   apps/main/templates/template_admin/signin.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views.py
