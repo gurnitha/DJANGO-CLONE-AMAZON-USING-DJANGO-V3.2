@@ -111,3 +111,9 @@
         new file:   apps/main/urls.py
         modified:   apps/main/views.py
         modified:   config/urls.py
+
+
+#### 4.5 Adding login template to the demo page
+
+        modified:   README.md
+        modified:   apps/main/templates/demo.html
