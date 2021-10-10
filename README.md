@@ -210,3 +210,16 @@
         modified:   README.md
         modified:   apps/main/views.py
 
+
+### -------------------------------------------
+### 5. ADMIN VIEWS SETUP
+### -------------------------------------------
+
+
+#### 5.1 Creating views_admin.py file and move the adminHome views function to it
+
+        modified:   README.md
+        deleted:    apps/main/admin_views.py
+        modified:   apps/main/urls.py
+        modified:   apps/main/views.py
+        new file:   apps/main/views_admin.py

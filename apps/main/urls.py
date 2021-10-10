@@ -5,11 +5,12 @@ from django.urls import path
 
 # Locals
 from apps.main.views import (
-	adminHome, 
 	adminLogin,
 	demoPage,
 	adminLoginProcess,
 	adminLogoutProcess)
+from apps.main.views_admin import (
+	adminHome,)
 
 # from apps.main.admin_views import adminHome
 

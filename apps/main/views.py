@@ -6,14 +6,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout   
 from django.contrib import messages
 from django.urls import reverse
-from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
-
-@login_required(login_url="/admin/")
-def adminHome(request):
-	return render(request, 'template_admin/index.html')
-
 
 def adminLogin(request):
 	return render(request, 'template_admin/signin.html')
