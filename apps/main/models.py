@@ -60,6 +60,10 @@ class Categories(models.Model):
     def get_absolute_url(self):
         return reverse("main:CategoriesListView")
 
+    def __str__(self):
+        return self.title 
+
+
 # class name:SubCategories
 class SubCategories(models.Model):
     id=models.AutoField(primary_key=True)
@@ -71,6 +75,9 @@ class SubCategories(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     is_active=models.IntegerField(default=1)
 
+    # define get_absolute_url
+    def get_absolute_url(self):
+        return reverse("main:SubCategoriesListView")
 
 # class name:Products
 class Products(models.Model):

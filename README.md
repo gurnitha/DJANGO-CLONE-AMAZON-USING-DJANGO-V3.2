@@ -387,3 +387,11 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/subcategory_create.html
+
+
+#### 6.3 SubCategoriesCreate Part 2- Adding options with conditional to select a category and create a subcategory
+
+        modified:   README.md
+        modified:   apps/main/models.py
+        modified:   apps/main/templates/template_admin/subcategory_create.html
+        new file:   media/5fa58abe1df1d5001821952e_N1aH0xW.jpg
