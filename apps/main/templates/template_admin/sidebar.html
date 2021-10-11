@@ -1,21 +1,60 @@
 {% load static %}
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
+
+        <!-- Logo desktop -->
         <div class="sidebar-brand">
-            <a href="{% url 'main:adminHome' %}"><img src="{% static 'assets/img/logo1.png' %}" style="height: 150px;" ></a><br><br>
+            <a href="{% url 'main:adminHome' %}"><img src="{% static 'assets/img/logo1.png' %}" style="height: 150px;" >Dashboard</a><br><br>
         </div>
+        <!-- Logo desktop end -->
+        <!-- Logo mobile -->
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="{% url 'main:adminHome' %}"><img src="{% static 'assets/img/logo1.png' %}" style="height: 150px;" ></a>
+            <a 
+                href="{% url 'main:adminHome' %}">
+                <img src="{% static 'assets/img/logo1.png' %}" 
+                style="height: 150px;" >
+                Dashboard
+            </a><br>
         </div>
+        <!-- Logo mobile end -->
+
+        <!-- Menu -->
         <ul class="sidebar-menu">
-            <li class="nav-item dropdown active">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Category</span></a>
+            <li 
+                class="nav-item dropdown active">
+                <a 
+                    href="#" 
+                    class="nav-link has-dropdown">
+                    <i class="fas fa-fire"></i>
+                    <span>Category</span>
+                </a>
                 <ul class="dropdown-menu">
-                    <li class="active"><a class="nav-link" href="{% url 'main:CategoriesListView' %}">All categories</a></li>
-                    <li><a class="nav-link" href="{% url 'main:CategoriesCreateView' %}">Add category</a></li>
+                    <!-- Define the path parameter -->
+                    {% url 'main:CategoriesListView' as category_list %}
+                    {% url 'main:CategoriesCreateView' as category_create %}
+
+                    <!-- Applying the path parameter -->
+                    <li 
+                        class="{% if request.path == category_list %}active{% endif %}">
+                        <a 
+                            class="nav-link" 
+                            href="{% url 'main:CategoriesListView' %}">
+                            All categories
+                        </a>
+                    </li>
+                    <!-- Applying the path parameter -->
+                    <li class="{% if request.path == category_create %}active{% endif %}">
+                        <a 
+                            class="nav-link" 
+                            href="{% url 'main:CategoriesCreateView' %}">
+                            Add category
+                        </a>
+                    </li>
                 </ul>
             </li>
         </ul>
+        <!-- Menu end -->
+
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
             <a href="{% url 'main:adminLogoutProcess' %}" class="btn btn-primary btn-lg btn-block btn-icon-split">
             <i class="fas fa-rocket"></i> Log Out

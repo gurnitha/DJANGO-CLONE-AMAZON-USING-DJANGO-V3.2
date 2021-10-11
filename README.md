@@ -352,3 +352,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/sidebar.html
+
+
+#### 5.21 Sidebar Part 2 - Add active state to the menu
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/sidebar.html
