@@ -382,3 +382,8 @@
         modified:   apps/main/urls.py
         modified:   apps/main/views_admin.py
 
+
+#### 6.2 SubCategoriesCreate Part 1- Adding template
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/subcategory_create.html
