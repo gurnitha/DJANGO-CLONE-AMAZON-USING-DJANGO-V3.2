@@ -32,10 +32,13 @@
                     <!-- Define the path parameter -->
                     {% url 'main:CategoriesListView' as category_list %}
                     {% url 'main:CategoriesCreateView' as category_create %}
+                    {% url 'main:CategoriesUpdateView' id  as category_update %}
 
                     <!-- Applying the path parameter -->
                     <li 
-                        class="{% if request.path == category_list %}active{% endif %}">
+                        class="
+                            {% if request.path == category_list %}active{% endif %}
+                            {% if request.path == category_update %}active{% endif %}">
                         <a 
                             class="nav-link" 
                             href="{% url 'main:CategoriesListView' %}">

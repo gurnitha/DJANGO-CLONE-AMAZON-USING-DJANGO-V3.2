@@ -358,3 +358,10 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/sidebar.html
+
+
+#### 5.22 Sidebar Part 3 - Add active state to the menu for Update category
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/base.html
+        modified:   apps/main/templates/template_admin/sidebar.html
