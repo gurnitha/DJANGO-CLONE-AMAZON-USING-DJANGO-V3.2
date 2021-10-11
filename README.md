@@ -276,3 +276,9 @@
         modified:   apps/main/templates/template_admin/base.html
         modified:   apps/main/views_admin.py
         new file:   media/50fdbd11700123e6ff11b830dfcb3740.jpg
+
+
+#### 5.9 Adding alert error messsage if any form field of creating category is empty
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_create.html
