@@ -1,3 +1,67 @@
 <!-- apps/main/templates/template_admin/category_update.html -->
+{% extends 'template_admin/base.html' %}
 
-CATEGORY UPDATE FORM
+<!-- Block title -->
+{% block title %}
+Category create | Dashboard
+{% endblock title %}
+
+<!-- Block custom css -->
+{% block custom_css %}
+{% endblock custom_css %}
+
+<!-- Block page title -->
+{% block page_title %}
+Category Update
+{% endblock page_title %}
+
+<!-- Block main page content -->
+{% block main_page_content %}
+
+<div class="row">
+	<div class="col-12 col-md-12 col-lg-12">
+		<div class="card">
+			<div class="card-header">
+				<h4>Category Update</h4>
+			</div>
+			
+			<div class="card-body col-8 col-md-8 col-lg-8">
+				<form method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% for field in form %}
+					<div class="form-group">
+						<label>{{ field.label }}</label>
+						<input 
+							type="{{ field.field.widget.input_type }}" 
+							name="{{ field.name }}"  
+							id="{{ field.name }}" 
+							class="form-control">
+
+							<!-- Showing error message -->
+							{% if field.errors %}
+							<div 
+								class="alert alert-danger"
+								style="margin: 15px;">
+								{{ field.errors }}
+							</div>
+							{% endif %}
+					</div>
+					{% endfor %}	
+					<button 
+						type="submit"
+						class="btn btn-primary btn-block">Save Category</button><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock main_page_content %}
+
+<!-- Block custom js -->
+{% block custom_js %}
+
+{% endblock custom_js %}
+
+

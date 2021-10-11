@@ -322,3 +322,8 @@
         modified:   apps/main/urls.py
         modified:   apps/main/views_admin.py
 
+
+#### 5.16 Creatge Update category page Part 2 - adding form template
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_update.html
