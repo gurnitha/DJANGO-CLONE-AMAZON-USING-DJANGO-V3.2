@@ -1,12 +1,85 @@
 <!-- apps/main/templates/template_admin/subcategory_update.html -->
+{% extends 'template_admin/base.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Sub Categoriy Update</title>
-</head>
-<body>
-	<h1>Sub Category Update</h1>
-</body>
-</html>
+<!-- Block title -->
+{% block title %}
+Sub Category update | Dashboard
+{% endblock title %}
+
+<!-- Block custom css -->
+{% block custom_css %}
+{% endblock custom_css %}
+
+<!-- Block page title -->
+{% block page_title %}
+Sub Category Update
+{% endblock page_title %}
+
+<!-- Block main page content -->
+{% block main_page_content %}
+
+<div class="row">
+	<div class="col-12 col-md-12 col-lg-12">
+		<div class="card">
+			<div class="card-header">
+				<h4>Sub Categories</h4>
+			</div>
+			
+			<div class="card-body col-8 col-md-8 col-lg-8">
+				<form method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% for field in form %}
+					<div class="form-group">
+						<label>{{ field.label }}</label>
+						
+						{% if field.field.widget.input_type != "select"  %}
+						<input 
+							type="{{ field.field.widget.input_type }}" 
+							name="{{ field.name }}"  
+							id="{{ field.name }}" 
+							class="form-control"
+							value="{{ field.value }}">
+						{% endif %}
+						
+						{% if field.field.widget.input_type == "select"  %}
+						<select
+							name="{{ field.name }}"  
+							id="{{ field.name }}" 
+							class="form-control">
+							<option>Select a category</option>
+							{% for id, value in field.field.choices %}
+								<option 
+									value="{{ id }}" {% if id == field.value%}selected{% endif %}>
+									{{ value }}
+								</option>
+							{% endfor %}
+						</select>	
+						{% endif %}
+
+							<!-- Showing error message -->
+							{% if field.errors %}
+							<div 
+								class="alert alert-danger"
+								style="margin: 15px;">
+								{{ field.errors }}
+							</div>
+							{% endif %}
+					</div>
+					{% endfor %}	
+					<button 
+						type="submit"
+						class="btn btn-primary btn-block">Save Category</button><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock main_page_content %}
+
+<!-- Block custom js -->
+{% block custom_js %}
+
+{% endblock custom_js %}
+

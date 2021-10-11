@@ -416,3 +416,8 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/subcategory_list.html
 
+
+#### 6.7 SubCategoriesUpdate Part 1- Adding template
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/subcategory_update.html
