@@ -249,4 +249,10 @@
         modified:   apps/main/views_admin.py
 
 
+#### 5.5 Create category_create form page Part 2 - customizing the page
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_create.html
+
+
 

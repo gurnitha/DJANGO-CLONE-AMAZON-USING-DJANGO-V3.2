@@ -18,10 +18,34 @@ Category Create
 <!-- Block main page content -->
 {% block main_page_content %}
 
-<form method="POST" enctype="multipart/form-data">
-	{{ form.as_p }}
-	<button type="submit">Save Category</button>
-</form>
+<div class="row">
+	<div class="col-12 col-md-12 col-lg-12">
+		<div class="card">
+			<div class="card-header">
+				<h4>Categories</h4>
+			</div>
+			<div class="card-body">
+				<form method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% for field in form %}
+					<div class="form-group">
+						<label>{{ field.label }}</label>
+						<input 
+							type="{{ field.field.widget.input_type }}" 
+							name="{{ field.name }}"  
+							id="{{ field.name }}" 
+							class="form-control">
+					</div>
+					{% endfor %}	
+					<button 
+						type="submit"
+						class="btn btn-primary btn-block">Save Category</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 {% endblock main_page_content %}
 
