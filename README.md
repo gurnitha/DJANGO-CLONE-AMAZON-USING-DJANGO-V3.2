@@ -255,4 +255,9 @@
         modified:   apps/main/templates/template_admin/category_create.html
 
 
+#### 5.6 Create category_create form page Part 3 - adding scripts to pre-populated the slug field
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/base.html
+
 
