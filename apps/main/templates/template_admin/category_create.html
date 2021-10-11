@@ -35,10 +35,12 @@ Category Create
 							name="{{ field.name }}"  
 							id="{{ field.name }}" 
 							class="form-control">
-							
+
 							<!-- Showing error message -->
 							{% if field.errors %}
-							<div class="alert alert-danger">
+							<div 
+								class="alert alert-danger"
+								style="margin: 15px;">
 								{{ field.errors }}
 							</div>
 							{% endif %}

@@ -282,3 +282,10 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_create.html
+
+
+#### 5.10 Styling the error message
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/base.html
+        modified:   apps/main/templates/template_admin/category_create.html

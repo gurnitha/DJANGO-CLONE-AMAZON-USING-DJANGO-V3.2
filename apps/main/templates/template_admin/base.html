@@ -23,8 +23,13 @@
     <link rel="stylesheet" href="{% static 'assets/css/components.css' %}">
     
     {% block custom_css %}
-    
     {% endblock custom_css %}
+
+    <style type="text/css">
+        ul.errorlist{
+            margin: -7px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -42,7 +47,7 @@
             <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
-                    
+
                     <!-- Page title -->
                     <div class="section-header">
                         <h1>{% block page_title %}{% endblock page_title %}</h1>
