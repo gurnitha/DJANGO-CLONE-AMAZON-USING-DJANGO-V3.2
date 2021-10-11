@@ -33,12 +33,21 @@ Category List
                 <p>Desc: {{category.description}}</p>
                 <p>Url slug: {{category.url_slug|title}}</p>
                 <div class="article-cta">
-                	<label class="custom-switch mt-2" style="float:left; padding-left: 0px;">
-                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                	<label 
+                		class="custom-switch mt-2" 
+                		style="float:left; padding-left: 0px;">
+                        <input 
+                        	type="checkbox" 
+                        	name="custom-switch-checkbox" 
+                        	class="custom-switch-input" 
+                        	{% if category.is_active == 1 %} checked {% endif %}>
                         <span class="custom-switch-indicator"></span>
                         <span class="custom-switch-description">Active</span>
-                      </label>
-                    <a href="#" class="btn btn-warning">Edit <i class="fas fa-chevron-right"></i></a>
+                     </label>
+                    <a 
+                    	href="#" 
+                    	class="btn btn-warning">Edit <i class="fas fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
         </article>

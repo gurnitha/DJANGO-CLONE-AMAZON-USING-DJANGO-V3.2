@@ -306,3 +306,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_list.html
+
+
+#### 5.14 Adding conditional to Active switcher button
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_list.html
