@@ -28,6 +28,7 @@
                     <i class="fas fa-fire"></i>
                     <span>Category</span>
                 </a>
+                <!-- Category -->
                 <ul class="dropdown-menu">
                     <!-- Define the path parameter -->
                     {% url 'main:CategoriesListView' as category_list %}
@@ -54,6 +55,29 @@
                         </a>
                     </li>
                 </ul>
+                <!-- Category end -->
+                <!-- Sub Category -->
+                <ul class="dropdown-menu">
+                    <!-- Define the path parameter -->
+                    <!-- Applying the path parameter -->
+                    <li 
+                        class="active">
+                        <a 
+                            class="nav-link" 
+                            href="{% url 'main:SubCategoriesListView' %}">
+                            All subcategories
+                        </a>
+                    </li>
+                    <!-- Applying the path parameter -->
+                    <li class="">
+                        <a 
+                            class="nav-link" 
+                            href="{% url 'main:SubCategoriesCreateView' %}">
+                            Add subcategory
+                        </a>
+                    </li>
+                </ul>
+                <!-- Sub Category end -->
             </li>
         </ul>
         <!-- Menu end -->

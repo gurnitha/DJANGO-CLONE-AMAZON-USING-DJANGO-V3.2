@@ -7,7 +7,7 @@ from django.views.generic import ListView, CreateView, UpdateView
 from django.contrib.messages.views import SuccessMessageMixin
 
 # Locals
-from apps.main.models import Categories
+from apps.main.models import Categories, SubCategories
 
 # Create your views here.
 
@@ -15,6 +15,9 @@ from apps.main.models import Categories
 @login_required(login_url="/admin/")
 def adminHome(request):
 	return render(request, 'template_admin/index.html')
+
+
+# ===================Categories===================
 
 
 # Class views:CategoriesListView
@@ -37,3 +40,26 @@ class CategoriesUpdateView(SuccessMessageMixin,UpdateView):
 	success_message="Category updated."
 	fields="__all__"
 	template_name="template_admin/category_update.html"
+
+
+# ===================Sub Categories===================
+
+
+# Class views:SubCategoriesListView
+class SubCategoriesListView(ListView):
+	model=SubCategories
+	template_name="template_admin/subcategory_list.html"
+
+
+# Class views:CategoriesCreateView
+class SubCategoriesCreateView(SuccessMessageMixin,CreateView):
+	model=SubCategories
+	fields="__all__"
+	template_name="template_admin/subcategory_create.html"
+
+
+# Class views:CategoriesUpdateView
+class SubCategoriesUpdateView(SuccessMessageMixin,UpdateView):
+	model=SubCategories
+	fields="__all__"
+	template_name="template_admin/subcategory_update.html"

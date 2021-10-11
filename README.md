@@ -365,3 +365,20 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/base.html
         modified:   apps/main/templates/template_admin/sidebar.html
+
+
+### -------------------------------------------
+### 6. SUB CATEGORIES
+### -------------------------------------------
+
+
+#### 6.1 Create Urls, Views and basic templates for SubCategoriesList, SubCategoriesCreate and SubCategoriesUpdate
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/sidebar.html
+        new file:   apps/main/templates/template_admin/subcategory_create.html
+        new file:   apps/main/templates/template_admin/subcategory_list.html
+        new file:   apps/main/templates/template_admin/subcategory_update.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views_admin.py
+
