@@ -346,3 +346,9 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_list.html
         new file:   media/toys.jpg
+
+
+#### 5.20 Sidebar Part 1 - Modified sidebar menu and add link
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/sidebar.html
