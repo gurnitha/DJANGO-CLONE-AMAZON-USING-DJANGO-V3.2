@@ -32,7 +32,7 @@ Sub Category List
             <div class="article-details">
             	<p><span class="badge badge-primary">{{ subcategory.category_id.title }}</span></p>
                 <p>Desc: {{subcategory.description|truncatewords:10}}</p>
-                <p>Url slug: {{subcategory.url_slug|title}}</p>
+                <p><span class="badge badge-light">Url slug: {{subcategory.url_slug|title}}</span></p>
                 <div class="article-cta">
                 	<label 
                 		class="custom-switch mt-2" 

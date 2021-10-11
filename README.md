@@ -439,3 +439,12 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/subcategory_update.html
+
+
+#### 6.11 House keeping - adding bedge to slug in the category and subcategory card
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_list.html
+        modified:   apps/main/templates/template_admin/subcategory_list.html
+        new file:   media/Messi.jpg
+        new file:   media/sports.jpg
