@@ -56,6 +56,21 @@ Sub Category Update
 						</select>	
 						{% endif %}
 
+						<!-- Current thumbnail -->
+						{% if field.field.widget.input_type == "file" %}
+						<div class="form-group">
+							<label>Current {{ field.label }}</label><br>
+							<div class="card">
+								<div class="card-body">
+									<img 
+									src="{{ field.value.url }}" 
+									style="height:150px;">
+								</div>
+							</div>
+						</div>
+						{% endif %}
+						<!-- Current thumbnail end -->
+						
 							<!-- Showing error message -->
 							{% if field.errors %}
 							<div 

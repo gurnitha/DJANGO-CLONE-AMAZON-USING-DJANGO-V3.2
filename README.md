@@ -433,3 +433,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/sidebar.html
+
+
+#### 6.10 Showing current thumbnail on updating the subcategory
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/subcategory_update.html
