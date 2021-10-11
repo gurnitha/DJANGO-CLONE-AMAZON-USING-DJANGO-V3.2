@@ -395,3 +395,10 @@
         modified:   apps/main/models.py
         modified:   apps/main/templates/template_admin/subcategory_create.html
         new file:   media/5fa58abe1df1d5001821952e_N1aH0xW.jpg
+
+
+#### 6.4 SubCategoriesList - Add template to show list of subcategories
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/subcategory_list.html
+        new file:   media/toys_fnkJNBX.jpg
