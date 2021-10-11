@@ -35,7 +35,8 @@ Category Update
 							type="{{ field.field.widget.input_type }}" 
 							name="{{ field.name }}"  
 							id="{{ field.name }}" 
-							class="form-control">
+							class="form-control"
+							value="{{ field.value }}">
 
 							<!-- Showing error message -->
 							{% if field.errors %}

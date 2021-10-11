@@ -327,3 +327,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_update.html
+
+
+#### 5.17 Creatge Update category page Part 3 - showing field values to the form
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_update.html
