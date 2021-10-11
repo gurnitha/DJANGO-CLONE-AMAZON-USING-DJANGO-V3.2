@@ -30,7 +30,7 @@ Category List
                 </div>
             </div>
             <div class="article-details">
-                <p>Desc: {{category.description}}</p>
+                <p>Desc: {{category.description|truncatewords:10}}</p>
                 <p>Url slug: {{category.url_slug|title}}</p>
                 <div class="article-cta">
                 	<label 

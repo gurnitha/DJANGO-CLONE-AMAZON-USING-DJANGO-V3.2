@@ -339,3 +339,10 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_update.html
+
+
+#### 5.19 Limiting description's text
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_list.html
+        new file:   media/toys.jpg
