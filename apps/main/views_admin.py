@@ -4,6 +4,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, CreateView
+from django.contrib.messages.views import SuccessMessageMixin
 
 # Locals
 from apps.main.models import Categories
@@ -23,7 +24,8 @@ class CategoriesListView(ListView):
 
 
 # Class views:CategoriesCreateView
-class CategoriesCreateView(CreateView):
+class CategoriesCreateView(SuccessMessageMixin,CreateView):
 	model=Categories
+	success_message="Category added."
 	fields="__all__"
 	template_name="template_admin/category_create.html"

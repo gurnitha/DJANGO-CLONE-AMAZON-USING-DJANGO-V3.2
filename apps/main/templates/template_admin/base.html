@@ -42,10 +42,34 @@
             <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
+                    
+                    <!-- Page title -->
                     <div class="section-header">
                         <h1>{% block page_title %}{% endblock page_title %}</h1>
                     </div>
+                    <!-- Page title end -->
+
+                    <!-- Messages for error or success -->
+                    {% if messages %}
+                    {% for message in messages %}
+                    {% if message.tags == "success" %}
+                    <div class="alert alert-success">
+                        {{message}}
+                    </div>
+                    {% endif %}
+                    {% if message.tags == "error" %}
+                    <div class="alert alert-danger">
+                        {{message}}
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                    <!-- Messages for error or success end -->
+
+                    <!-- Main page content -->
                     {% block main_page_content %}{% endblock main_page_content %}
+                    <!-- Main page content end -->
+
                 </section>
             </div>
             <!-- Main Content // -->
@@ -88,7 +112,7 @@
 
     {% block custom_js %}
     {% endblock custom_js %}
-    
+
     <script>
         document.getElementById("title").onkeyup=function(){
             document.getElementById("url_slug").value=document.getElementById("title").value.toLowerCase().replace(" ","-");

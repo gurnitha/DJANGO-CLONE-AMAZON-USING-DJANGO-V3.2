@@ -269,3 +269,10 @@
         new file:   media/5fa58abe1df1d5001821952e.jpg
         new file:   media/5fa58abe1df1d5001821952e_J7ihZmY.jpg
 
+
+#### 5.8 Create alert message for success and error on creating category
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/base.html
+        modified:   apps/main/views_admin.py
+        new file:   media/50fdbd11700123e6ff11b830dfcb3740.jpg
