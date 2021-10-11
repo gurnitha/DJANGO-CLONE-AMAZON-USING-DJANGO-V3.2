@@ -62,5 +62,6 @@ class SubCategoriesCreateView(SuccessMessageMixin,CreateView):
 # Class views:CategoriesUpdateView
 class SubCategoriesUpdateView(SuccessMessageMixin,UpdateView):
 	model=SubCategories
+	success_message="Sub Category updated."
 	fields="__all__"
 	template_name="template_admin/subcategory_update.html"

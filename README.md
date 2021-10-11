@@ -421,3 +421,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/subcategory_update.html
+
+
+#### 6.8 Display message after updating a subcategory
+
+        modified:   README.md
+        modified:   apps/main/views_admin.py
