@@ -295,3 +295,8 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_create.html
+
+
+#### 5.12 Displaying categories to category_list page
+
+        modified:   apps/main/templates/template_admin/category_list.html
