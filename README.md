@@ -333,3 +333,9 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_update.html
+
+
+#### 5.18 Creatge Update category page Part  - showing the current thumbnail in the form field
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_update.html
