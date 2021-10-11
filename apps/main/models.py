@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.dispatch import receiver
 from django.db.models.signals import post_save
+from django.urls import reverse
 
 # Create your models here.
 
@@ -55,6 +56,9 @@ class Categories(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     is_active=models.IntegerField(default=1)
 
+    # define get_absolute_url
+    def get_absolute_url(self):
+        return reverse("main:CategoriesListView")
 
 # class name:SubCategories
 class SubCategories(models.Model):

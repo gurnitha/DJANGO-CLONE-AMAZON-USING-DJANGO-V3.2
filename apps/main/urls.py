@@ -21,11 +21,11 @@ app_name = 'main'
 urlpatterns = [
 	
 	# Admin urls
-	path('admin/', adminHome, name='adminHome'), 
-	path('admin/login/', adminLogin, name='adminLogin'),  
-	path('admin/login_process/', adminLoginProcess, name='adminLoginProcess'), 
-	path('admin/logout_process/', adminLogoutProcess, name='adminLogoutProcess'),
-	path('admin/categories', CategoriesListView.as_view(), name='CategoriesListView'), 
-	path('admin/categories/create', CategoriesCreateView.as_view(), name='CategoriesCreateView'), 
+	path('dashboard/', adminHome, name='adminHome'), 
+	path('dashboard/login/', adminLogin, name='adminLogin'),  
+	path('dashboard/login_process/', adminLoginProcess, name='adminLoginProcess'), 
+	path('dashboard/logout_process/', adminLogoutProcess, name='adminLogoutProcess'),
+	path('dashboard/categories', CategoriesListView.as_view(), name='CategoriesListView'), 
+	path('dashboard/categories/create', CategoriesCreateView.as_view(), name='CategoriesCreateView'), 
     path('', demoPage, name='demoPage'),
 ]

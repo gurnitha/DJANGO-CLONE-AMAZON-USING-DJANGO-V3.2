@@ -261,3 +261,11 @@
         modified:   apps/main/templates/template_admin/base.html
 
 
+#### 5.7 Create get_absolute_url on Categories model to create cagegory
+
+        modified:   README.md
+        modified:   apps/main/models.py
+        modified:   apps/main/urls.py
+        new file:   media/5fa58abe1df1d5001821952e.jpg
+        new file:   media/5fa58abe1df1d5001821952e_J7ihZmY.jpg
+
