@@ -30,6 +30,7 @@ Sub Category List
                 </div>
             </div>
             <div class="article-details">
+            	<p><span class="badge badge-primary">{{ subcategory.category_id.title }}</span></p>
                 <p>Desc: {{subcategory.description|truncatewords:10}}</p>
                 <p>Url slug: {{subcategory.url_slug|title}}</p>
                 <div class="article-cta">
@@ -45,7 +46,7 @@ Sub Category List
                         <span class="custom-switch-description">Active</span>
                      </label>
                     <a 
-                    	href="{% url 'main:CategoriesUpdateView' subcategory.id %}" 
+                    	href="{% url 'main:SubCategoriesUpdateView' subcategory.id %}" 
                     	class="btn btn-warning">Edit <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>

@@ -409,3 +409,10 @@
         modified:   README.md
         modified:   apps/main/views_admin.py
         new file:   media/vIqzOHXj.jpg
+
+
+#### 6.6 Display subcategory parent in the subcategorieslist
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/subcategory_list.html
+
