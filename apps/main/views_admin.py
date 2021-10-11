@@ -54,6 +54,7 @@ class SubCategoriesListView(ListView):
 # Class views:CategoriesCreateView
 class SubCategoriesCreateView(SuccessMessageMixin,CreateView):
 	model=SubCategories
+	success_message="Sub Category added."
 	fields="__all__"
 	template_name="template_admin/subcategory_create.html"
 

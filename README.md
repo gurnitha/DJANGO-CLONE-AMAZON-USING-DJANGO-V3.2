@@ -402,3 +402,10 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/subcategory_list.html
         new file:   media/toys_fnkJNBX.jpg
+
+
+#### 6.5 Display message after creating a new subcategory
+
+        modified:   README.md
+        modified:   apps/main/views_admin.py
+        new file:   media/vIqzOHXj.jpg
