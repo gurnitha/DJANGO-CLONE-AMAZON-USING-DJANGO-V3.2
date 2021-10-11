@@ -300,3 +300,9 @@
 #### 5.12 Displaying categories to category_list page
 
         modified:   apps/main/templates/template_admin/category_list.html
+
+
+#### 5.13 Adding Active switcher button to category card
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_list.html
