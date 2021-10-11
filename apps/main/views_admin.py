@@ -3,7 +3,7 @@
 # Django modules
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, UpdateView
 from django.contrib.messages.views import SuccessMessageMixin
 
 # Locals
@@ -29,3 +29,11 @@ class CategoriesCreateView(SuccessMessageMixin,CreateView):
 	success_message="Category added."
 	fields="__all__"
 	template_name="template_admin/category_create.html"
+
+
+# Class views:CategoriesUpdateView
+class CategoriesUpdateView(SuccessMessageMixin,UpdateView):
+	model=Categories
+	success_message="Category updated."
+	fields="__all__"
+	template_name="template_admin/category_update.html"

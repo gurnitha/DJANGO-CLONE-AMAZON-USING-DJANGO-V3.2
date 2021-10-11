@@ -312,3 +312,13 @@
 
         modified:   README.md
         modified:   apps/main/templates/template_admin/category_list.html
+
+
+#### 5.15 Creatge Update category page Part 1 - Views, Tempate and Urls
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_list.html
+        new file:   apps/main/templates/template_admin/category_update.html
+        modified:   apps/main/urls.py
+        modified:   apps/main/views_admin.py
+
