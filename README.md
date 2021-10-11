@@ -289,3 +289,9 @@
         modified:   README.md
         modified:   apps/main/templates/template_admin/base.html
         modified:   apps/main/templates/template_admin/category_create.html
+
+
+#### 5.11 Customizing the Category Create form width
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/category_create.html

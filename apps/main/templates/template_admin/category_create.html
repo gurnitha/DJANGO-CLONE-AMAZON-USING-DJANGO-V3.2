@@ -24,7 +24,8 @@ Category Create
 			<div class="card-header">
 				<h4>Categories</h4>
 			</div>
-			<div class="card-body">
+			
+			<div class="card-body col-8 col-md-8 col-lg-8">
 				<form method="POST" enctype="multipart/form-data">
 					{% csrf_token %}
 					{% for field in form %}
@@ -48,7 +49,7 @@ Category Create
 					{% endfor %}	
 					<button 
 						type="submit"
-						class="btn btn-primary btn-block">Save Category</button>
+						class="btn btn-primary btn-block">Save Category</button><br>
 				</form>
 			</div>
 		</div>
