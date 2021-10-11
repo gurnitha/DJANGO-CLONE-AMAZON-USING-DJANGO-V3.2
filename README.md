@@ -427,3 +427,9 @@
 
         modified:   README.md
         modified:   apps/main/views_admin.py
+
+
+#### 6.9 Making active state subcategory menu
+
+        modified:   README.md
+        modified:   apps/main/templates/template_admin/sidebar.html

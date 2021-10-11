@@ -28,7 +28,7 @@
                     <i class="fas fa-fire"></i>
                     <span>Category</span>
                 </a>
-                <!-- Category -->
+                <!------------ Category ---------------->
                 <ul class="dropdown-menu">
                     <!-- Define the path parameter -->
                     {% url 'main:CategoriesListView' as category_list %}
@@ -55,13 +55,20 @@
                         </a>
                     </li>
                 </ul>
-                <!-- Category end -->
-                <!-- Sub Category -->
+                <!------------ Category end ------------>
+
+                <!---------- Sub Category -------------->
                 <ul class="dropdown-menu">
                     <!-- Define the path parameter -->
+                    {% url 'main:SubCategoriesListView' as subcategory_list %}
+                    {% url 'main:SubCategoriesCreateView' as subcategory_create %}
+                    {% url 'main:SubCategoriesUpdateView' id  as subcategory_update %}
+                    
                     <!-- Applying the path parameter -->
                     <li 
-                        class="active">
+                        class="
+                            {% if request.path == subcategory_list %}active{% endif %}
+                            {% if request.path == subcategory_update %}active{% endif %}">
                         <a 
                             class="nav-link" 
                             href="{% url 'main:SubCategoriesListView' %}">
@@ -69,7 +76,7 @@
                         </a>
                     </li>
                     <!-- Applying the path parameter -->
-                    <li class="">
+                    <li class="{% if request.path == subcategory_create %}active{% endif %}">
                         <a 
                             class="nav-link" 
                             href="{% url 'main:SubCategoriesCreateView' %}">
@@ -77,7 +84,7 @@
                         </a>
                     </li>
                 </ul>
-                <!-- Sub Category end -->
+                <!---------- Sub Category end ---------->
             </li>
         </ul>
         <!-- Menu end -->
