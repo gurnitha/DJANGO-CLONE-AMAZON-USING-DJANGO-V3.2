@@ -12,7 +12,7 @@ from apps.main.models import Categories, SubCategories
 # Create your views here.
 
 # Views method:adminHome
-@login_required(login_url="/admin/")
+# @login_required(login_url="/admin/")
 def adminHome(request):
 	return render(request, 'template_admin/index.html')
 

@@ -448,3 +448,9 @@
         modified:   apps/main/templates/template_admin/subcategory_list.html
         new file:   media/Messi.jpg
         new file:   media/sports.jpg
+
+
+#### 6.12 House keeping - Modified view_admin.py
+
+        modified:   README.md
+        modified:   apps/main/views_admin.py
