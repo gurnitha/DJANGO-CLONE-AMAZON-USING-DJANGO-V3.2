@@ -454,3 +454,9 @@
 
         modified:   README.md
         modified:   apps/main/views_admin.py
+
+
+#### 6.13 House keeping - Added a new test category
+
+        modified:   README.md
+        new file:   media/log-good.JPG
